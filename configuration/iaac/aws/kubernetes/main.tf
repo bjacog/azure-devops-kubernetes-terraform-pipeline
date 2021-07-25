@@ -38,7 +38,7 @@ module "in28minutes-cluster" {
 
   node_groups = [
     {
-      instance_type = "t3.micro"
+      instance_types = "t3.micro"
       max_capacity  = 5
       desired_capacity = 3
       min_capacity  = 3

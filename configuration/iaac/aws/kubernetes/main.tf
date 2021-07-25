@@ -44,6 +44,12 @@ module "in28minutes-cluster" {
       min_capacity  = 3
     }
   ]
+
+  worker_groups = [
+    {
+      instance_type = "m5.large"
+    }
+  ]
 }
 
 data "aws_eks_cluster" "cluster" {

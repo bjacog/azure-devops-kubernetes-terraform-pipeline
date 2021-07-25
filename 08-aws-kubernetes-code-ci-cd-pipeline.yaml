@@ -66,5 +66,5 @@ stages:
         kubernetesServiceConnection: 'aws-kubernetes-cluster-service-connection'
         namespace: 'default'
         manifests: '$(System.ArtifactsDirectory)/configuration/kubernetes/deployment.yaml'
-        containers: in28min/currency-exchange-devops:$(tag)
+        containers: bjacog/currency-exchange-devops:$(tag)
 # apply deployment -- kubectl apply -f deloyment.yaml
